@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>E-commerce</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <link rel="stylesheet" type="text/css" href="assets/css/cart.css">
+      <link rel="stylesheet" type="text/css" href="assets/css/index.css">
+    <script src="assets/images/index.js"></script>
+</head>
+
+<body>
+
+    <!-- menu bar -->
+    <div class="container-fluid bg-light p-1">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-5">
+                    <span>PHONE: +01 256 25 235</span>
+                    <span>|</span>
+                    <span>EMAIL: INFO@EISER.COM</span>
+                </div>
+                <div class="col-sm-4">
+                </div>
+                <div class="col-sm-3">
+                    <span>GIFT CARD</span>
+                    <span>|</span>
+                    <span>TRACK ORDER</span>
+                    <span>|</span>
+                    <span>CONTACT US</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- navigation bar -->
+
+     <nav class="navbar navbar-expand-lg navbar-light bg-white p-2">
+        <div class="container">
+            <a class="navbar-brand" href="#"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
+                aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarText">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#"><img src="assets/images/logo.png" alt="logo" height="40px"
+                                width="140px" class="logo"> <span class="sr-only">(current)</span></a>
+                    </li>
+                </ul>
+
+                <ul class="navbar-nav mr-auto text-center  navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html" class="active">HOME <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item active">
+                       <div class="dropdown">
+  <a href="store.html" class="dropbtn">SHOP</a>
+  <div class="dropdown-content">
+    <a href="shopcategery.html">SHOP CATEGERY</a>
+    <a href="productdetails.html">PRODUCT DETAILS</a>
+     <a href="shoppingcart.html">SHOPPING CART</a>
+  </div>
+</div>
+                    </li>
+                    <li class="nav-item active">
+                            <div class="dropdown">
+  <a href="#" class="dropbtn">BLOG</a>
+  <div class="dropdown-content">
+    <a href="#">BLOG</a>
+    <a href="#">BLOG DETAILS</a>
+  </div>
+</div>
+                    </li>
+                    <li class="nav-item active">
+                             <div class="dropdown">
+  <a href="#" class="dropbtn">PAGES</a>
+  <div class="dropdown-content">
+    <a href="tracking.html">TRACKING</a>
+    
+  </div>
+</div>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="contact.html">CONTACT <span class="sr-only">(current)</span></a>
+                    </li>
+
+                </ul>
+                <ul class="navbar-nav mr-auto text-right">
+                    <span class="right"> <i class="fa fa-search"></i></span>
+                        <div class="col">
+        <!--   <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#cart"><span class="total-count"></span></div> -->
+                    <span class="right" data-toggle="modal" data-target="#cart"> <img src="assets/images/cart.png" alt="cart" height="50px" width="45px"><span class="total-count" id="count"></span></span>
+                    <span class="right"> <i class='fa fa-user'></i></span>
+                    <span class="right"> <i class="fas fa-heart"></i></span>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+
+
+<!-- shopping cart -->
+
+
+<h1>Shopping Cart</h1>
+
+<div class="shopping-cart">
+
+  <div class="column-labels">
+    <label class="product-image">Image</label>
+    <label class="product-details">Product</label>
+    <label class="product-price">Price</label>
+    <label class="product-quantity">Quantity</label>
+    <label class="product-removal">Remove</label>
+    <label class="product-line-price">Total</label>
+  </div>
+
+  <div class="product">
+    <div class="product-image">
+      <img src="https://s.cdpn.io/3/dingo-dog-bones.jpg">
+    </div>
+    <div class="product-details">
+      <div class="product-title">Dingo Dog Bones</div>
+      <p class="product-description">The best dog bones of all time. Holy crap. Your dog will be begging for these things! I got curious once and ate one myself. I'm a fan.</p>
+    </div>
+    <div class="product-price">12.99</div>
+    <div class="product-quantity">
+      <input type="number" value="2" min="1">
+    </div>
+    <div class="product-removal">
+      <button class="remove-product">
+        Remove
+      </button>
+    </div>
+    <div class="product-line-price">25.98</div>
+  </div>
+
+  <div class="product">
+    <div class="product-image">
+      <img src="https://s.cdpn.io/3/large-NutroNaturalChoiceAdultLambMealandRiceDryDogFood.png">
+    </div>
+    <div class="product-details">
+      <div class="product-title">Nutro™ Adult Lamb and Rice Dog Food</div>
+      <p class="product-description">Who doesn't like lamb and rice? We've all hit the halal cart at 3am while quasi-blackout after a night of binge drinking in Manhattan. Now it's your dog's turn!</p>
+    </div>
+    <div class="product-price">45.99</div>
+    <div class="product-quantity">
+      <input type="number" value="1" min="1">
+    </div>
+    <div class="product-removal">
+      <button class="remove-product">
+        Remove
+      </button>
+    </div>
+    <div class="product-line-price">45.99</div>
+  </div>
+
+  <div class="totals">
+    <div class="totals-item">
+      <label>Subtotal</label>
+      <div class="totals-value" id="cart-subtotal">71.97</div>
+    </div>
+    <div class="totals-item">
+      <label>Tax (5%)</label>
+      <div class="totals-value" id="cart-tax">3.60</div>
+    </div>
+    <div class="totals-item">
+      <label>Shipping</label>
+      <div class="totals-value" id="cart-shipping">15.00</div>
+    </div>
+    <div class="totals-item totals-item-total">
+      <label>Grand Total</label>
+      <div class="totals-value" id="cart-total">90.57</div>
+    </div>
+  </div>
+      
+      <button class="checkout">Checkout</button>
+
+</div>
+
+
+
+
+
+  <!-- footer -->
+
+
+
+  <div class="jumbotron bg-dark">
+<div class="container">
+    <div class="row">
+
+<div class="col-sm-2">
+      <ul class="nav flex-column">
+    <li class="nav-item">
+      <b style="color:white;font-size: 20px;float: left;margin-left: 14px;">Top Products</b>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#" style="color:grey;font-size: 14px;float: left;margin-top:14px;">Managed Website</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#" style="color:grey;font-size: 14px;float: left;">Manage Reputation</a>
+    </li>
+      <li class="nav-item">
+      <a class="nav-link" href="#" style="color:grey;font-size: 14px;float: left;">Power Tools</a>
+    </li>
+      <li class="nav-item">
+      <a class="nav-link" href="#" style="color:grey;font-size: 14px;float: left;">Marketing Service</a>
+    </li>
+  </ul>
+
+</div>
+
+<div class="col-sm-2">
+          <ul class="nav flex-column">
+    <li class="nav-item">
+      <b style="color:white;font-size: 20px;float: left;margin-left: 14px;">Quick Links</b>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#" style="color:grey;font-size: 14px;float: left;margin-top:14px;">Jobs</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#" style="color:grey;font-size: 14px;float: left;">Brand Assets</a>
+    </li>
+      <li class="nav-item">
+      <a class="nav-link" href="#" style="color:grey;font-size: 14px;float: left;">Investor Relations</a>
+    </li>
+      <li class="nav-item">
+      <a class="nav-link" href="#" style="color:grey;font-size: 14px;float: left;">Terms of Service</a>
+    </li>
+  </ul>
+
+</div>
+<div class="col-sm-2">
+       <ul class="nav flex-column">
+    <li class="nav-item">
+      <b style="color:white;font-size: 20px;float: left;margin-left: 14px;">Features</b>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#" style="color:grey;font-size: 14px;float: left;margin-top:14px;">Jobs</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#" style="color:grey;font-size: 14px;float: left;">Brand Assets</a>
+    </li>
+      <li class="nav-item">
+      <a class="nav-link" href="#" style="color:grey;font-size: 14px;float: left;">Investor Relations</a>
+    </li>
+      <li class="nav-item">
+      <a class="nav-link" href="#" style="color:grey;font-size: 14px;float: left;">Terms of Service</a>
+    </li>
+  </ul>
+
+</div>
+<div class="col-sm-3">
+       <ul class="nav flex-column">
+    <li class="nav-item">
+      <b style="color:white;font-size: 20px;float: left;margin-left: 14px;">Resources</b>
+    </li>
+     <li class="nav-item">
+      <a class="nav-link" href="#" style="color:grey;font-size: 14px;float: left;margin-top:14px;">Guides</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#" style="color:grey;font-size: 14px;float: left;">Research</a>
+    </li>
+      <li class="nav-item">
+      <a class="nav-link" href="#" style="color:grey;font-size: 14px;float: left;">Experts</a>
+    </li>
+      <li class="nav-item">
+      <a class="nav-link" href="#" style="color:grey;font-size: 14px;float: left;">Agencies</a>
+    </li>
+  </ul>
+</div>
+<div class="col-sm-3">
+       <ul class="nav flex-column">
+    <li class="nav-item">
+      <b style="color:white;font-size: 20px;float: left;">Newsletter</b>
+    </li>
+    <li class="nav-item">
+      <p style="color:grey;font-size: 13px;float: left;margin-top:18px;">You can trust us. we only send promo offers,</p>
+    </li>
+    <li class="nav-item">
+      <input type="text" placeholder="Your Email Address.." name="search">
+      <button type="submit">SUBSCRIBE</button>
+    </li>
+  </ul>
+</div>
+    </div>
+
+
+<div class="row">
+<div class="col-sm-6">
+    <p style="color:white;font-weight:bold;font-size:14px;margin-top:40px;">Copyright ©2019 All rights reserved | This template is made with  by <span style="color:rgb(62, 224, 76);">Colorlib</span></p>
+</div>
+<div class="col-sm-1">
+</div>
+<!-- <div class="col-sm-5">
+<i class="fal fa-facebook-official" style="font-size:36px;margin-top:30px;"></i>
+<i class="fa fa-twitter-square" style="font-size:36px"></i>
+<i class="fa fa-twitter-square" style="font-size:36px"></i>
+<i class="fa fa-behance" style="font-size:36px"></i>
+</div> -->
+</div>
+
+
+
+</div>
+  </div>
+
+
+
+
+
+
+</body>
+
+</html>
+
+<script type="text/javascript">
+/* Set rates + misc */
+var taxRate = 0.05;
+var shippingRate = 15.00; 
+var fadeTime = 300;
+
+
+/* Assign actions */
+$('.product-quantity input').change( function() {
+  updateQuantity(this);
+});
+
+$('.product-removal button').click( function() {
+  removeItem(this);
+});
+
+
+/* Recalculate cart */
+function recalculateCart()
+{
+  var subtotal = 0;
+  
+  /* Sum up row totals */
+  $('.product').each(function () {
+    subtotal += parseFloat($(this).children('.product-line-price').text());
+  });
+  
+  /* Calculate totals */
+  var tax = subtotal * taxRate;
+  var shipping = (subtotal > 0 ? shippingRate : 0);
+  var total = subtotal + tax + shipping;
+  
+  /* Update totals display */
+  $('.totals-value').fadeOut(fadeTime, function() {
+    $('#cart-subtotal').html(subtotal.toFixed(2));
+    $('#cart-tax').html(tax.toFixed(2));
+    $('#cart-shipping').html(shipping.toFixed(2));
+    $('#cart-total').html(total.toFixed(2));
+    if(total == 0){
+      $('.checkout').fadeOut(fadeTime);
+    }else{
+      $('.checkout').fadeIn(fadeTime);
+    }
+    $('.totals-value').fadeIn(fadeTime);
+  });
+}
+
+
+/* Update quantity */
+function updateQuantity(quantityInput)
+{
+  /* Calculate line price */
+  var productRow = $(quantityInput).parent().parent();
+  var price = parseFloat(productRow.children('.product-price').text());
+  var quantity = $(quantityInput).val();
+  var linePrice = price * quantity;
+  
+  /* Update line price display and recalc cart totals */
+  productRow.children('.product-line-price').each(function () {
+    $(this).fadeOut(fadeTime, function() {
+      $(this).text(linePrice.toFixed(2));
+      recalculateCart();
+      $(this).fadeIn(fadeTime);
+    });
+  });  
+}
+
+
+/* Remove item from cart */
+function removeItem(removeButton)
+{
+  /* Remove row from DOM and recalc cart total */
+  var productRow = $(removeButton).parent().parent();
+  productRow.slideUp(fadeTime, function() {
+    productRow.remove();
+    recalculateCart();
+  });
+}
+
+
+</script>
