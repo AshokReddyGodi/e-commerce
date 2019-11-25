@@ -274,14 +274,14 @@ img.logo {
 }
 
 
-ul.navbar-nav.mr-auto.text-right {
-    margin-left: 159px;
+ul.navbar-nav.mr-auto.text-right1 {
+    margin-left: 32px;
 }
 
-ul.navbar-nav.mr-auto.text-center {
+ul.navbar-nav.mr-auto.text-center1 {
     padding: -19px;
     /* margin: 6px; */
-    padding-left: 156px;
+    padding-left: 32px;
 }
 
 #van1 {
