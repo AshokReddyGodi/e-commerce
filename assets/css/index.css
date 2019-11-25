@@ -4,10 +4,14 @@ span {
     margin-left: -2px;
 }
 
-.right {
+  .right {
     font-size: 20px;
     padding: 5px;
-    margin-left: -3px;
+    margin-left: -2px;
+}
+
+span.right {
+    margin-left: -2px;
 }
 
 img {
@@ -284,6 +288,15 @@ ul.navbar-nav.mr-auto.text-center1 {
     padding-left: 32px;
 }
 
+
+ul.navbar-nav.mr-auto.text-center.navbar-nav {
+    margin-left: 318px;
+}
+
+ul.navbar-nav.mr-auto.text-right {
+    margin-left: 179px;
+}
+
 #van1 {
     font-weight: 900;
     color: grey;
@@ -417,6 +430,8 @@ margin-top:30px;
 .right1:hover {
 background-color: white;
   }
+
+
 
 .fa-shopping-cart {
     font-weight: 900;
